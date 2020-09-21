@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptTeams.js" defer></script>
+    <script src="scriptPlayers.js" defer></script>
+    <style>
+        tr:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>           								
+          <th align="left">Teamname</th>
+          <th align="left">Position</th> 
+          <th align="left">Wappen</th>
+          <th align="left">Spiele gesamt</th>
+          <th align="left">Gewonnen</th>
+          <th align="left">Verloren</th>
+          <th align="left">Unentschieden</th>
+          <th align="left">Punkte</th>
+        </tr>
+        <tbody id="tableTeams">
+        </tbody>
+        </table>
+
+        <h4 id="playerList"></h4>
+
+        <table>
+            <tr>           								
+              <th align="left">Spielername</th>
+              <th align="left">Position</th> 
+            </tr>
+            <tbody id="tablePlayers">
+            </tbody>
+            </table>
+</body>
+
+
+</html>
