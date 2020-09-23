@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script src="scriptTeams.js" defer></script>
     <script src="scriptPlayers.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"> defer </script>
     <style>
         tr:hover{
             cursor: pointer;
@@ -41,7 +43,22 @@
             <tbody id="tablePlayers">
             </tbody>
             </table>
+
+            
 </body>
 
 
 </html>
+
+<script id="team-template" type="text/x-handlebars-template">
+    <tr onclick="loadTablePlayers(4)">
+        <td>BV Borussia 09 Dortmund</td>
+        <td>3</td>
+        <td><img width="15px" src="https://crests.football-data.org/4.svg" <="" td=""></td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+    </tr>
+</script>
