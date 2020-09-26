@@ -37,28 +37,30 @@
 
         <table>
             <tr>           								
-              <th align="left">Spielername</th>
-              <th align="left">Position</th> 
+              <th align="left">id</th>
+              <th align="left">name</th>
+              <th align="left">position</th> 
+              <th align="left">nationality</th> 
+              <th align="left">dateOfBirth</th> 
+              <th align="left">countryOfBirth</th>  
             </tr>
             <tbody id="tablePlayers">
             </tbody>
             </table>
-
-            
+   
 </body>
-
 
 </html>
 
 <script id="team-template" type="text/x-handlebars-template">
-    <tr onclick="loadTablePlayers(4)">
-        <td>BV Borussia 09 Dortmund</td>
-        <td>3</td>
-        <td><img width="15px" src="https://crests.football-data.org/4.svg" <="" td=""></td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>3</td>
+    <tr onclick="loadTablePlayers('{{team.id}}')">
+        <td>{{team.name}}</td>
+        <td>{{position}}</td>
+        <td><img width="15px" src="{{team.crestUrl}}" <="" td=""></td>
+        <td>{{playedGames}}</td>
+        <td>{{won}}</td>
+        <td>{{lost}}</td>
+        <td>{{draw}}</td>
+        <td>{{draw}}</td>
     </tr>
 </script>

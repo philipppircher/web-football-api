@@ -1,4 +1,3 @@
-
 let id = 0;
 
 function loadTablePlayers(teamId){
@@ -17,7 +16,14 @@ function loadTablePlayers(teamId){
 
         let html="";
         data.squad.forEach(element => {
-            html +="<tr><td>" + element.name + "</td><td> " + element.position +"</td></tr>"
+            html +="<tr><td>" + element.id
+            + "</td><td> " + element.name
+            + "</td><td> " + element.position
+            + "</td><td> " + element.nationality
+            + "</td><td> " + element.dateOfBirth
+            + "</td><td> " + element.countryOfBirth
+            +"</td></tr>"
+           
             console.log(element);
         });
 
